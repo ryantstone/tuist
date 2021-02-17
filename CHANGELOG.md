@@ -7,9 +7,17 @@ Please, check out guidelines: https://keepachangelog.com/en/1.0.0/
 ### Added
 
 - Add ODR support [#2490](https://github.com/tuist/tuist/pull/2490) by [@DimaMishchenko](https://github.com/DimaMishchenko)
+- Add support for StoreKit configuration files [#2524](https://github.com/tuist/tuist/pull/2524) by [@bolismauro](https://github.com/bolismauro)
+- Make sure security and codesign can access certificates in signing.keychain [#2528]((https://github.com/tuist/tuist/pull/2528) by [@rist](https://github.com/rist).
+
+### Fixed
+
+- Fix missing linkable products for static frameworks with transitive precompiled dependencies [#2500](https://github.com/tuist/tuist/pull/2500) by [@kwridan](https://github.com/kwridan).
+- Fix crash when using `tuist graph` in a project that leverages plugins [#2507](https://github.com/tuist/tuist/pull/2507) by [@bolismauro](https://github.com/bolismauro).
 
 ### Changed
 
+- Migrate `BuildGraphInspector` to `ValueGraph` [#2527](https://github.com/tuist/tuist/pull/2527) by [@fortmarek](https://github.com/fortmarek/)
 - Replace `ExpressibleByStringLiteral` with `ExpressibleByStringInterpolation` for `ProjectDescription` objects by [@DimaMishchenko](https://github.com/DimaMishchenko)
 - Make sure security and codesign can access certificates in signing.keychain [#2528]((https://github.com/tuist/tuist/pull/2528) by [@rist](https://github.com/rist).
 
